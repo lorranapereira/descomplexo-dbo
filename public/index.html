@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Descomplexo</title>
+
+    <!-- Bootstrap core CSS -->
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Old+Standard+TT" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Lobster+Two|Old+Standard+TT" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom styles for this template -->
+
+  </head>
+
+  <body>
+    <div class="container">  
+    <div class="login">
+        <h1>Descomplexo</h1>
+        <p> Bem vindo ao Descomplexo! Antes de entrar no site, por favor clique em login com google e depois em continuar.</p>
+        <div class="logado" style="display:none">
+            <img src="" alt="avatar" class="img-circle" width="40" height="40">
+            <span></span>
+            <a href="#" class="btn btn-danger">
+                <span class="fa fa-sign-out"></span>
+                Sair
+            </a>
+        </div>
+        <br/>
+        <div class="naologado">
+            <a href="#" class="btn btn-social btn-google" style="font-size:10px;background-color:red">
+                <span class="fa fa-google" style="font-size:28px;"></span>
+                Login com Google
+            </a>
+        </div>
+        <form>
+            <button type="submit" id="button" class="btn btn-large btn-primary">
+                Continuar
+            </button>  
+        </form>
+        <div class="alert alert-warning" id="alert">
+        </div>
+    </div>
+    <div class="container avisos" style="margin-top: 2em;"></div>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBxdYpw1Wnx1VomU4bc-Q0rlpcO_D-kmqA",
+        authDomain: "descomplexo-2d0bb.firebaseapp.com",
+        databaseURL: "https://descomplexo-2d0bb.firebaseio.com",
+        projectId: "descomplexo-2d0bb",
+        storageBucket: "descomplexo-2d0bb.appspot.com",
+        messagingSenderId: "352086947653"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="js/index.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    </div>
+    
+  </body>
+</html>
